@@ -32,6 +32,7 @@ app.engine('.html', ejs.__express);
 
 //挂载自定义路由表
 // app.use("/admin",require(rootPath.concat("/router/adminRouter.js")));
+app.use("/category",require(rootPath.concat("/router/simu_categoryRouter.js")));
 
 //404错误中间件
 app.use((req, res, next) => {
